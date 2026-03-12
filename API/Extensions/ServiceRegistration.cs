@@ -116,6 +116,7 @@ public static class ServiceRegistration
         services.AddScoped<IReviewRepository, ReviewRepository>();
         services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
         services.AddScoped<IFollowRepository, FollowRepository>();
+        services.AddScoped<IFeedRepository, FeedRepository>();
 
         // ================= SERVICES =================
         services.AddScoped<ICompanyService, CompanyService>();
@@ -123,6 +124,7 @@ public static class ServiceRegistration
         services.AddScoped<IPostService, PostService>();
         services.AddScoped<IReviewService, ReviewService>();
         services.AddScoped<IFollowService, FollowService>();
+        services.AddScoped<IFeedService, FeedService>();
 
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
